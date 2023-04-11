@@ -1,0 +1,54 @@
+.clothes-grid
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    .clothing-item
+        flex-direction: row
+        // flex: 0 0 10% /* Each item will take up 20% of the container */
+        margin: 0 1% /* Add some margin to the sides of the items */
+        // text-align: center
+        position: relative
+        bottom: 20px
+        justify-content: center
+        justify-content: space-between
+        .cloth-image
+            padding-right: 5px
+            width: 155px
+            height: 170px
+        .cloth-name
+            position: relative
+            // bottom: 50px
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+@media (max-width: 768px)
+    .clothes-grid
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        justify-content: space-between
+        .clothing-item
+            position: relative
+            bottom: 60px
+            flex: 0 0 0%
+            justify-content: center
+            justify-content: space-between
+            .cloth-image
+                // padding-bottom: 120px
+                padding-right: 0px
+                width: 55px
+                height: 70px
+                .cloth-name
+                    position: relative
+                    top: 0px
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 14px
+                    line-height: 17px
+    
+            
