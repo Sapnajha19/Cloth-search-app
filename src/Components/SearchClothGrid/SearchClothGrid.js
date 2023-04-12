@@ -3,13 +3,14 @@ import "./SearchClothGrid.sass"
 import ReactSimpleStarRating from "react-rating-stars-component";
 import Heart from "react-heart"
 export default function SearchClothGrid({ clothItems }) {
-  // const [active, setActive] = useState(false)
+
   const [activeHearts, setActiveHearts] = useState(new Array(clothItems.length).fill(false));
   const handleHeartClick = (index) => {
     const newActiveHearts = [...activeHearts]
     newActiveHearts[index] = !newActiveHearts[index]
     setActiveHearts(newActiveHearts)
   }
+  
   return (
     <div className='clothing-grid'>
       {clothItems.map((cloth, index) => (

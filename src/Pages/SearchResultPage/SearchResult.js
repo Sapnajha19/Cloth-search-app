@@ -1,34 +1,32 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import "./SearchResult.sass"
 import SearchBar from '../../Components/SearchBar/SearchBar'
-import zeviLogo from "../../Assets/logo.png"
+import ZeviLogo from "../../Assets/ZeviLogo.png"
 import Arrow from "../../Assets/Arrow.png"
-import Rectangle from "../../Assets/Rectangle.png"
-import ReactSimpleStarRating from "react-rating-stars-component";
+import ReactSimpleStarRating from "react-rating-stars-component"
 import SearchClothGrid from '../../Components/SearchClothGrid/SearchClothGrid'
-import { faker } from '@faker-js/faker';
+import { faker } from '@faker-js/faker'
+import {Link} from 'react-router-dom'
 export default function SearchResult() {
-    // useEffect(() => {
-    //     window.location.reload();
-    //   }, []);
-    
+
     const clothItems = [];
 
-  for (let i = 0; i < 8; i++) {
-    const imageUrl = faker.image.fashion();
-    const clothName = faker.commerce.productName();
-    const price1 = faker.commerce.price();
-    const price2 = faker.commerce.price();
-    const number1 = faker.datatype.number(5)
-    const number2 = faker.datatype.number(300)
-    clothItems.push({imageUrl, clothName, price1, price2, number1, number2})
-  }
-
+    for (let i = 0; i < 8; i++) {
+        const imageUrl = faker.image.image();
+        const clothName = faker.commerce.productName();
+        const price1 = faker.commerce.price();
+        const price2 = faker.commerce.price();
+        const number1 = faker.datatype.number(5)
+        const number2 = faker.datatype.number(300)
+        clothItems.push({ imageUrl, clothName, price1, price2, number1, number2 })
+    }
 
     return (
         <div className="search-result-container">
             <SearchBar className="search-bar" />
-            <img src={zeviLogo} alt="zevi-logo" className='zevi-logo' />
+            <Link to={"/"}>
+            <img src={ZeviLogo} alt="zevi-logo" className='zevi-logo' />
+            </Link>
             <p className='header'>Search Results</p>
             <div className="left-side-bar">
                 <div className="brand-box">
@@ -53,7 +51,7 @@ export default function SearchResult() {
                 <div className='brand-child1'>
                     <div className='a'>
                         <div className='square-one1'></div>
-                        <div>UNder 500</div>
+                        <div>Under 500</div>
                     </div>
                     <div className='b'>
                         <div className='square-two1'></div>
@@ -90,7 +88,7 @@ export default function SearchResult() {
 
             </div>
             <div className='right-side-bar'>
-             <SearchClothGrid clothItems={clothItems}/>   
+                <SearchClothGrid clothItems={clothItems} />
             </div>
         </div>
     )
