@@ -9,10 +9,33 @@
         bottom: 440px
         justify-content: center
         justify-content: space-between
-    
+        .hover-button
+            width: 255px
+            height: 47px
+            background: rgba(109,132,255,0.71)
+            border: none
+            position: absolute
+            top: 179px
+            color: #ffffff
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 500
+            font-size: 20px
+            line-height: 24px
+            display: none
+            transition: transform 0.2s ease
     .cloth-image
         width: 255px
         height: 225px
+        &:hover + .hover-button
+            display: block
+            // cursor: pointer
+    .wishlist-heart
+        width: 24.88px
+        height: 22px
+        position: absolute
+        right: 20px
+        top: 20px
     .cloth-name
         color: #000000
         font-family: 'Inter'
@@ -55,4 +78,3 @@
             text-align: center
             position: relative
             top: 5px
-
