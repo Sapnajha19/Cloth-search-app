@@ -2,6 +2,7 @@
     width: 100%
     height: 100vh
     background: #ffffff
+    z-index: 1
     .search-bar
         width: 628.37px
         height: 57px
@@ -29,11 +30,13 @@
         font-size: 30px
         line-height: 48px
     .left-side-bar
-        
+        position: relative
+        width: 300px
+        left: 0px
         .brand-box
             display: flex
             flex-direction: row
-            gap: 150px
+            gap: 140px
             position: relative
             top: 60px
             left: 40px
@@ -84,9 +87,279 @@
             position: relative
             top: 55px
             left: 40px
+        .brand-box1
+            display: flex
+            flex-direction: row
+            gap: 100px
+            position: relative
+            top: 60px
+            left: 40px
+        .brand-child1
+            position: relative
+            top: 80px
+            left: 40px
+            display: flex
+            flex-direction: column
+            gap: 20px
+            padding-bottom: 40px
+            .a
+                position: relative
+                display: flex
+                flex-direction: row
+                gap: 10px
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                .square-one1
+                    height: 20px
+                    width: 20px
+                    border: 1px solid black
+                    border-radius: 2px
+                    position: relative
+            .b
+                position: relative
+                display: flex
+                flex-direction: row
+                gap: 10px
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                .square-two1
+                    height: 20px
+                    width: 20px
+                    border: 1px solid black
+                    border-radius: 2px
+                    position: relative
+        .line1
+            width: 200px
+            height: 0px
+            border: 0.5px solid rgba(0,0,0,0.2)
+            position: relative
+            top: 55px
+            left: 40px
     .right-side-bar
-        width: 1300px
+        width: 1200px
         position: relative
-        left: 200px
+        left: 220px
+@media (max-width: 768px)
+    .search-result-container
+        width: 100%
+        height: 100vh
+        background: #ffffff
+        .search-bar
+            width: 328.37px
+            height: 57px
+            position: relative
+            top: 70px
+            left: 8%
+            border: 0.686747px solid rgba(0,0,0,0.5)
+            border-radius: 13.7349px
+            input:focus
+                outline: none
+        .zevi-logo
+            width: 86px
+            height: 44.69px
+            position: absolute
+            top: 10px
+            left: 70%
+        .header
+            color: #000000
+            position: relative
+            top: 65px
+            right: 25%
+            font-family: "Inter"
+            font-style: normal
+            font-weight: 400
+            font-size: 25px
+            line-height: 48px
+        .left-side-bar
+            position: relative
+            width: 100px
+            left: 0px
+            .brand-box
+                display: flex
+                flex-direction: row
+                gap: 50px
+                position: relative
+                top: 60px
+                left: 15px
+            .brand-child
+                position: relative
+                top: 70px
+                left: 15px
+                display: flex
+                flex-direction: column
+                gap: 20px
+                padding-bottom: 40px
+                .a
+                    position: relative
+                    display: flex
+                    flex-direction: row
+                    gap: 10px
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 19px
+                    .square-one
+                        height: 10px
+                        width: 10px
+                        border: 1px solid black
+                        border-radius: 2px
+                        position: relative
+                .b
+                    position: relative
+                    display: flex
+                    flex-direction: row
+                    gap: 10px
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 19px
+                    .square-two
+                        height: 10px
+                        width: 10px
+                        border: 1px solid black
+                        border-radius: 2px
+                        position: relative
+            .line
+                width: 100px
+                height: 0px
+                border: 0.5px solid rgba(0,0,0,0.2)
+                position: relative
+                top: 40px
+                left: 15px
+            .brand-box1
+                display: flex
+                flex-direction: row
+                gap: 50px
+                position: relative
+                top: 60px
+                left: 15px
+            .brand-child1
+                position: relative
+                top: 70px
+                left: 15px
+                display: flex
+                flex-direction: column
+                gap: 20px
+                padding-bottom: 40px
+                .a
+                    position: relative
+                    display: flex
+                    flex-direction: row
+                    gap: 10px
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 19px
+                    .square-one1
+                        height: 10px
+                        width: 10px
+                        border: 1px solid black
+                        border-radius: 2px
+                        position: relative
+                .b
+                    position: relative
+                    display: flex
+                    flex-direction: row
+                    gap: 10px
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 19px
+                    .square-two1
+                        height: 10px
+                        width: 10px
+                        border: 1px solid black
+                        border-radius: 2px
+                        position: relative
+            .line1
+                width: 100px
+                height: 0px
+                border: 0.5px solid rgba(0,0,0,0.2)
+                position: relative
+                top: 40px
+                left: 15px  
+            .brand-box
+                display: flex
+                flex-direction: row
+                gap: 50px
+                position: relative
+                top: 60px
+                left: 15px
+            .brand-child
+                position: relative
+                top: 70px
+                left: 15px
+                display: flex
+                flex-direction: column
+                gap: 20px
+                padding-bottom: 40px
+                .a
+                    position: relative
+                    display: flex
+                    flex-direction: row
+                    gap: 10px
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 19px
+                    .square-one
+                        height: 10px
+                        width: 10px
+                        border: 1px solid black
+                        border-radius: 2px
+                        position: relative
+                .b
+                    position: relative
+                    display: flex
+                    flex-direction: row
+                    gap: 10px
+                    font-family: 'Inter'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 19px
+                    .square-two
+                        height: 10px
+                        width: 10px
+                        border: 1px solid black
+                        border-radius: 2px
+                        position: relative
+            .line
+                width: 100px
+                height: 0px
+                border: 0.5px solid rgba(0,0,0,0.2)
+                position: relative
+                top: 40px
+                left: 15px    
+        .right-side-bar
+            width: 270px
+            position: relative
+            left: 100px 
             
+                   
+            
+        
+            
+                
+            
+                
+        
+        
+    
+    
+    
+        
+    
+    
             

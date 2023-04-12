@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import "./SearchResult.sass"
 import SearchBar from '../../Components/SearchBar/SearchBar'
 import zeviLogo from "../../Assets/logo.png"
@@ -8,6 +8,10 @@ import ReactSimpleStarRating from "react-rating-stars-component";
 import SearchClothGrid from '../../Components/SearchClothGrid/SearchClothGrid'
 import { faker } from '@faker-js/faker';
 export default function SearchResult() {
+    // useEffect(() => {
+    //     window.location.reload();
+    //   }, []);
+    
     const clothItems = [];
 
   for (let i = 0; i < 8; i++) {
@@ -42,21 +46,21 @@ export default function SearchResult() {
                     </div>
                 </div>
                 <div className='line'></div>
-                <div className="brand-box">
+                <div className="brand-box1">
                     <div>PRICE RANGE</div>
                     <div><img src={Arrow} alt="arrow" /></div>
                 </div>
-                <div className='brand-child'>
+                <div className='brand-child1'>
                     <div className='a'>
-                        <div className='square-one'></div>
+                        <div className='square-one1'></div>
                         <div>UNder 500</div>
                     </div>
                     <div className='b'>
-                        <div className='square-two'></div>
+                        <div className='square-two1'></div>
                         <div>1000 To 3000</div>
                     </div>
                 </div>
-                <div className='line'></div>
+                <div className='line1'></div>
                 <div className="brand-box">
                     <div>RATINGS</div>
                     <div><img src={Arrow} alt="arrow" /></div>
