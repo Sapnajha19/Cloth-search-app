@@ -4,18 +4,19 @@
     flex-wrap: wrap
     justify-content: center
     .clothing-item
-        margin: 0 1% /* Add some margin to the sides of the items */
+        margin: 1% 1.5% /* Add some margin to the sides of the items */
         position: relative
-        bottom: 440px
+        bottom: 450px
+        left: 20px
         justify-content: center
         justify-content: space-between
         .hover-button
-            width: 255px
+            width: 239px
             height: 47px
             background: rgba(109,132,255,0.71)
             border: none
             position: absolute
-            top: 179px
+            top: 279px
             color: #ffffff
             font-family: 'Inter'
             font-style: normal
@@ -24,9 +25,12 @@
             line-height: 24px
             display: none
             transition: transform 0.2s ease
+            .button-text
+                position: relative
+                top: -10px
     .cloth-image
-        width: 255px
-        height: 225px
+        width: 239px
+        height: 325px
         &:hover + .hover-button
             display: block
             // cursor: pointer
@@ -44,11 +48,13 @@
         font-size: 20px
         line-height: 24px
         position: relative
-        right: 20px
+        left: -10px
+        // right: 15px
     .price-tags
         display: flex
         flex-direction: row
-        gap: 20px
+        gap: 5px
+        position: relative
         .price-1
             color: rgba(0,0,0,0.4)
             font-family: 'Inter'
@@ -68,6 +74,8 @@
         display: flex
         flex-direction: row
         gap: 5px
+        position: relative
+        left: 10px
         .review-no
             color: rgba(0,0,0,0.8)
             font-family: 'Poppins'
@@ -77,4 +85,97 @@
             line-height: 21px
             text-align: center
             position: relative
+            top: 2px
+@media (max-width: 768px)
+    .clothing-grid
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: center
+        .clothing-item
+            margin: 1% 0.5% /* Add some margin to the sides of the items */
+            position: relative
+            left: 0px
+            bottom: 530px
+            justify-content: center
+            justify-content: space-between
+            .hover-button
+                width: 55px
+                height: 15px
+                background: rgba(109,132,255,0.71)
+                border: none
+                position: absolute
+                top: 60px
+                right: 35px
+                color: #ffffff
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 500
+                font-size: 5px
+                line-height: 24px
+                display: none
+                transition: transform 0.2s ease
+                .button-text
+                    position: relative
+                    top: -10px
+        .cloth-image
+            width: 75px
+            height: 95px
+            &:hover + .hover-button
+                display: block
+        .wishlist-heart
+            width: 14.88px
+            height: 12px
+            position: absolute
+            right: 35px
             top: 5px
+        .cloth-name
+            color: #000000
+            font-family: 'Inter'
+            font-style: normal
+            font-weight: 400
+            font-size: 8px
+            line-height: 24px
+            position: relative
+            left: 5px
+            // right: -40px
+        .price-tags
+            display: flex
+            flex-direction: row
+            gap: 10px
+            position: relative
+            left: 30px
+            top: -10px
+            .price-1
+                color: rgba(0,0,0,0.4)
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 300
+                font-size: 10px
+                line-height: 24px
+                text-decoration-line: line-through
+            .price-2
+                color: #6D84FF
+                font-family: 'Inter'
+                font-style: normal
+                font-weight: 600
+                font-size: 10px
+                line-height: 24px
+        .rate
+            display: flex
+            flex-direction: row
+            gap: 1px
+            position: relative
+            top: -10px
+            .review-no
+                color: rgba(0,0,0,0.8)
+                font-family: 'Poppins'
+                font-style: normal
+                font-weight: 300
+                font-size: 8px
+                line-height: 10px
+                text-align: center
+                position: relative
+                top: 8px
+                left: 5px
+            
